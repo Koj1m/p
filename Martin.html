@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<script type="text/javascript">
+    function icfes ()
+    {
+        var A1;
+        var B1;
+        var C1;
+        var D1;
+        A1=document.getElementById("A1").value;
+        B1=document.getElementById("B1").value;
+        C1=document.getElementById("C1").value;
+        D1=document.getElementById("D1").value;
+        if((C1=="X" || C1=="x") && (A1!="X" && A1!="x") && (B1!="X" && B1!="x") && (D1!="X" && D1!="x"))
+        {
+            document.getElementById("Resultado").value=1;
+        }
+        else
+        {
+            document.getElementById("Resultado").value=0;
+        }
+    }
+</script>
+<body bgcolor="0a0612">
+<center>
+<font color="white">
+<font size="7">
+Martin Eduardo Aguirre<p></p>
+<img src="">
+</center>
+</font>
+<font size="5"><p></p>
+Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que 
+la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo 1 dólar equivalente a 2.000 pesos colombianos y que su inversión, en dólares, le dará ganancias del 3 % en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del 3 %. 
+La afirmación de su amigo es <p></p>
+A. correcta, pues, sin importar las variaciones en la tasa de cambio, la proporción en que aumenta la inversión en dólares es la misma que en pesos.<p></p>
+B. incorrecta, pues debería conocerse el valor exacto de la inversión para poder calcular la 
+cantidad de dinero que ganará.<p></p>
+C. correcta, pues el 3 % representa una proporción fija en cualquiera de las dos monedas, 
+puesto que la tasa de cambio permanecerá constante.<p></p>
+D. incorrecta, pues el 3 % representa un incremento, que será mayor en pesos colombianos, 
+pues en esta moneda cada dólar representa un valor 2.000 veces mayor.<p></p>
+</font>
+<table border="4" bgcolor="black">
+<tr>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+
+<tr>
+    <td>A</td>
+    <td><input type="text" width="4" size="1" name="A1" id="A1"></td> 
+    <td><input type="text" width="4" size="1" name="A2" id="A2"></td>
+    <td><input type="text" width="4" size="1" name="A3" id="A3"></td>
+    <td><input type="text" width="4" size="1" name="A4" id="A4"></td>
+</tr>
+<tr>
+    <td>B</td>
+    <td><input type="text" width="4" size="1" name="B1" id="B1"></td> 
+    <td><input type="text" width="4" size="1" name="B2" id="B2"></td>
+    <td><input type="text" width="4" size="1" name="B3" id="B3"></td>
+    <td><input type="text" width="4" size="1" name="B4" id="B4"></td>
+</tr>
+<tr>
+     <td>C</td>
+    <td><input type="text" width="4" size="1" name="C1" id="C1"></td> 
+    <td><input type="text" width="4" size="1" name="C2" id="C2"></td>
+    <td><input type="text" width="4" size="1" name="C3" id="C3"></td>
+    <td><input type="text" width="4" size="1" name="C4" id="C4"></td>
+</tr>
+<tr>
+    <td>D</td>
+    <td><input type="text" width="4" size="1" name="D1" id="D1"></td> 
+    <td><input type="text" width="4" size="1" name="D2" id="D2"></td>
+    <td><input type="text" width="4" size="1" name="D3" id="D3"></td>
+    <td><input type="text" width="4" size="1" name="D4" id="D4"></td>
+</tr>
+</table>
+<input type="button" value="Aceptar" onclick="icfes ()"><p></p>
+<font size="5">
+Calificación:
+<br>
+</font>
+<input type="text" name="Resultado" id="Resultado"></input>
+</body>
